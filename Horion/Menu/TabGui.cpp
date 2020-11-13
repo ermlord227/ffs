@@ -95,12 +95,12 @@ void TabGui::renderLevel() {
 			xOffset + maxLength + 4.5f,
 			yOffset + textHeight);
 
-		MC_Color color = MC_Color(200, 200, 200);
+		MC_Color color = MC_Color(232, 123, 232);
 
 		if (selected[renderedLevel].selectedItemId == i && level >= renderedLevel) {  // We are selected
 			if (renderedLevel == level) {                                             // Are we actually in the menu we are drawing right now?
 				// We are selected in the current menu
-				DrawUtils::fillRectangle(rectPos, MC_Color(13, 29, 48), 1.f);
+				DrawUtils::fillRectangle(rectPos, MC_Color(12, 30, 98), 1.f);
 				static bool lastVal = toggleCurrentSelection;
 
 				if (toggleCurrentSelection) {
